@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    color: black;
+    background-color: #f3f4f6;
+}
+
+
+.wrapper{
+    min-height: 100vh;
+    margin: 115px 300px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.summary-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.card p {
+    margin: 10px 0 0;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-list, .book-list {
+    text-align: center;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    margin: 0px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.user-list h2, .book-list h2, .return-requests h2 {
+    margin-top: 0;
+    color: black;
+    text-align: start;
+    margin-top: 5px;
+}
+
+button {
+    float: right;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;   
+}
+
+.user-list button{
+    float: right;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;   
+}
+
+
+.book-list button{
+    float: right;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    text-align: center;
+}
+
+thead th {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid #555;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.return-requests {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 89%;
+}
+
+.return-requests h2 {
+    margin-top: 0;
+}
+
+.nav-links nav a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+.nav-links nav a:hover{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links{
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: end;
+    position: absolute;
+}
+
+.nav-links span{
+    font-weight: bold;
+    font-size: 18px;
+}

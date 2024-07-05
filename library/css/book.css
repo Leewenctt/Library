@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #f3f4f6;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 15%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-section {
+    margin-top: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 30px 20px; 
+    height: 520px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.cover {
+    background-color: #ccc;
+    height: 100%;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+}
+
+#title {
+    margin-top: -20px;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+#author {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #7e7e7e;
+}
+
+.genres {
+    font-size: 15px;
+}
+
+.tags {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 6px;
+}
+
+.tag {
+    padding: 6px 15px;
+    background: #e1e1e1;
+    margin-right: 8px;
+    border-radius: 20px;
+    border: 1px solid #7e7e7e;
+}
+
+#description-book {
+    max-height: 110px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 25px;
+    text-overflow: ellipsis;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 6px;
+    padding-right: 15px;
+}
+
+.add-info {
+    margin-bottom: 20px;
+}
+
+.add-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btns a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1579e4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.btns a:hover {
+    background-color: black;
+}
+
+.recommendations {
+    margin-top: 10px;
+    height: 230px;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.recc-cover {
+    background-color: #ccc;
+    border-radius: 8px;
+    height: 135px;
+    width: 90px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.book-label {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.additional{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.additional2{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.margin{
+    margin-left: 6px;
+}
+
+.book-label span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.titl{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.descrip{
+    color: #868686;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.book:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    padding-top: 10px;
+    margin-top: 185px; /*365px*/
+}
+
+.modal-content2 {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    padding-top: 10px;
+    margin-top: 350px; /*365px*/
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-toggle:checked + .modal {
+    display: block;
+}
+
+.notice{
+    width: 100%;
+    text-align: center;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notice2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notice-header{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.links a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.modal-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.modal-button:hover {
+    background-color: black;
+}
+
+.modal-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-content .section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content .section span {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.modal-content .form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.modal-content .form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content .reservation-details {
+    display: flex;
+    gap: 15px;
+}
+
+.modal-content .reservation-details .book-cover img {
+    width: 65px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content .reservation-details .book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+}
+
+.modal-content .form-group.duration {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-content .form-group.duration input {
+    width: 100%;
+}
+
+.modal-content .form-group.duration span {
+    width: 30px;
+    text-align: center;
+}
+
+.modal-content button[type="submit"] {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: black;
+}
+
+.book-info span:last-child{
+    font-size: 14px;
+    font-weight: 500;
+    color: #7e7e7e;
+}
+
+.book-info span:first-child{
+    font-weight: 600;
+}
+
+.unchange{
+    color: #7e7e7e;
+}

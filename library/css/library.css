@@ -1,0 +1,340 @@
+body {
+    font-family: "Urbanist", sans-serif;
+    font-size: 15px;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5.95% 15%;
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    background: url(../img/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.all-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2%;
+    border-radius: 8px;
+    margin-top: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-header {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.all-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    margin-top: 5px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.book-card {
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    padding: 0.6%;
+    border: 1px solid #b9b9b9;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s, filter 0.3s ease-in-out;
+    align-items: center;
+    overflow: hidden;
+    margin:10px;
+    margin-left: 12px;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: brightness(0.9);
+}
+
+.cover {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background: url(../covers/default.jpg);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.book-card:hover .cover {
+    transform: scale(1.07);
+}
+
+.text {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    transition: transform 0.2s ease-in-out;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%; 
+}
+
+.status {
+    font-size: 12px;
+    color: white;
+    height: fit-content;
+    padding: 1px 4px;
+    margin-top: 3px;
+    margin-right: 3px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.title {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.author {
+    font-size: 14px;
+    font-weight: 500;
+    color: #474747e7;
+}
+
+.book-card:hover .text {
+    transform: translateY(5px);
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 2px;
+    border: 1px solid #cacaca;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    border: 1px solid black;
+    background-color: #000000;
+    color: white;
+}
+
+.pagination a.active:hover {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #cacaca;
+}
+
+.search-section{
+    margin-top: 2%;
+}
+
+.search-results{
+    margin-top: 1%;
+}
+
+.searched{
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    max-width: 95px;
+    margin: 0px 18px;
+    text-decoration: none;
+}
+
+
+.search-book:hover .search-cover{
+    transform: scale(1.1);
+}
+
+.search-cover{
+    width: 60px;
+    height: 90px;
+    background-color: #dfdfdf8f;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.search-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-title {
+    margin-top: 10px;
+    font-weight: 600;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 24px;
+    max-width: 105px;
+}
+
+.search-author {
+    color: #474747e7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+.search-row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.search-button {
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background-color: #f3f4f6;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.sorting{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 98.5%;
+}
+
+.sorting a {
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    transition: font-weight 0.3s ease;
+}
+
+.sorting a.active {
+    font-weight: bold;
+}
+
+.sorting a:hover {
+    text-decoration: underline;
+}
+
+.no-books-found {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting select {
+    padding: 3px 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 2px;
+    background-color: white;
+}
+
+.sorting button {
+    padding: 3px 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.sorting button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+.sorting select {
+    min-width: 120px;
+}
